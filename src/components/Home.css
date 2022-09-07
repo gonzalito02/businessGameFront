@@ -1,0 +1,28 @@
+.carousel1 {
+    background-color: #18314F;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.carousel2 {
+    background-color: #194375;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.carousel3 {
+    background-color: #152040;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.itemCarousel {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}

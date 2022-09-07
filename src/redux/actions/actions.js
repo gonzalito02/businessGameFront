@@ -27,7 +27,7 @@ import {
 
 var tokenjson = localStorage.getItem("loggedUser")
 
-const urlBack = "http://localhost:3002"
+const urlBack = "https://businessgame.herokuapp.com/"
 
 export const setToken = (token) => {
     return tokenSet = token

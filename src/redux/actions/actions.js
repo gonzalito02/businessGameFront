@@ -904,7 +904,7 @@ export const setUserLogged = (data) => {
 
 export const checkLog = (log) => {
     if (!tokenjson || log !== JSON.parse(tokenjson).rol) {
-        return window.location.replace("https://business-game-2ci06glzd-gonzalito02.vercel.app")
+        return window.location.replace("https://business-game.vercel.app/")
     } 
 }
 

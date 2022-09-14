@@ -56,7 +56,7 @@ export default function NavBar () {
 
     const submitLogout = () => {
         dispatch(logoutFunction())
-        window.location.replace("http://localhost:3000/home")
+        window.location.replace("https://business-game.vercel.app/")
     }
 
     var {

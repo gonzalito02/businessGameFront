@@ -75,8 +75,8 @@ export default function MarketLiveTable () {
         dispatch(getStudentById(userLogin.id))
     }, [userLogin])
 
-    const data = useMemo(() => market, [])
-    const columns = useMemo(() => COLUMNS, [])
+    const data = useMemo(() => market, [market])
+    const columns = useMemo(() => COLUMNS, [COLUMNS])
     
 
     const swalWithBootstrapButtons = Swal.mixin({

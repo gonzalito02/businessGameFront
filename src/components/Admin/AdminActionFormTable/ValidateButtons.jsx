@@ -99,7 +99,7 @@ export default function ValidateButtons ({data}) {
             icon: 'success',
             title: 'Form validated!'
         })
-        window.location.reload()
+        setTimeout(() => {window.location.reload()}, 4000);
     }
 
     const handleDenegate = (e) => {
@@ -130,7 +130,7 @@ export default function ValidateButtons ({data}) {
                     icon: 'success',
                     title: 'Form denegated'
                 })
-                window.location.reload()
+                setTimeout(() => {window.location.reload()}, 4000);
             } 
         })
     }

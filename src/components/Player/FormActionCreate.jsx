@@ -204,9 +204,9 @@ export default function FormActionCreate () {
                 dispatch(createActionForm(loginData.id, formul, loanForm, investmentForm));
                 swalWithBootstrapButtons.fire({
                     text: 'Form sent!',
-                    timer: 1000
+                    timer: 3000
                 })
-               setTimeout(()=> window.location.reload(), 1500)
+               setTimeout(()=> window.location.reload(), 3500)
             } 
 
           })

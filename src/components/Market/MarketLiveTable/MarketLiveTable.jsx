@@ -75,7 +75,7 @@ export default function MarketLiveTable () {
         dispatch(getStudentById(userLogin.id))
     }, [userLogin])
 
-    const data = useMemo(() => market, [market])
+    const data = useMemo(() => market, [])
     const columns = useMemo(() => COLUMNS, [])
     
 
@@ -121,7 +121,7 @@ export default function MarketLiveTable () {
                     icon: 'success',
                     title: 'Purchase sent to database'
                 })
-                window.location.reload()
+                setTimeout(() => {window.location.reload()}, 3000);
             } 
         })
     }
@@ -147,7 +147,7 @@ export default function MarketLiveTable () {
 
     const { pageIndex, pageSize, globalFilter } = state 
 
-    if (pageSize === 10) setPageSize(12)
+    if (pageSize === 10) setPageSize(100)
 
     return (
         <>

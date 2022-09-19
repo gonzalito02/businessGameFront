@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { GlobalFilter } from "../../GlobalFilter";
 import { getAllResultsData } from "../../../redux/actions/actions";
 import Table from "react-bootstrap/esm/Table";
+import { CSVLink } from "react-csv";
 
 export default function AllPlayersResultsTable () {
 
@@ -91,6 +92,7 @@ export default function AllPlayersResultsTable () {
             <button onClick={() => previousPage()} disabled={!canPreviousPage}>Previous</button>
             <button onClick={() => nextPage()} disabled={!canNextPage}>Next</button>
             <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>{">>"}</button>
+            <CSVLink  data={results}><button>Download CSV</button></CSVLink>
         </div>
 
         </>
